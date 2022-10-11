@@ -5,6 +5,6 @@
 
 +Homework1.html
 
-+image.jpg
++Excercise1.html
 
-+Logo_UIT_updated.jpg
++Excercise2.html
