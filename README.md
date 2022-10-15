@@ -12,4 +12,5 @@
 -Lab2 HTML/CSS consists of these file
 
 +lab2-ex2-inclass.html
+
 +lab2-ex2-inclass.js
