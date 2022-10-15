@@ -9,7 +9,7 @@
 
 +Excercise2.html
 
--Lab2 HTML/CSS consists of these file
+-Lab2 Javascript consists of these file
 
 +lab2-ex2-inclass.html
 
