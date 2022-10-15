@@ -19,4 +19,4 @@
 
 +lab2-ex3-inclass.html
 
-++lab2-ex3-inclass.js
++lab2-ex3-inclass.js
