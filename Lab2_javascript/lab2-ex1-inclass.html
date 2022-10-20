@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="myInput">
+    <button onclick="myFunction()">Copy text</button>
+
+    <script >
+//ex1
+console.log("ex1")
+var today = new Date();
+var day = today.getDay();
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+console.log("Today is : " + daylist[day] + ".");
+
+var hour = today.getHours();
+var prepand = (hour >= 12)? " PM ":" AM ";
+
+console.log("Current Time is: "+hour + prepand );
+
+//ex2
+function myFunction() {
+    // Get the text field
+    var copyText = document.getElementById("myInput");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+  
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+  }
+
+  //ex3
+const parseCookie = str =>
+  str
+    .split(';')
+    .map(v => v.split('='))
+    .reduce((acc, v) => {
+      acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
+      return acc;
+    }, {});
+console.log("ex3")
+console.log(parseCookie('name=Van Bang; id=19521236'));
+
+//ex4
+const isValidJSON = obj => {
+  try {
+    JSON.parse(obj);
+    return true;
+  } catch (e) {
+    return false;
+  }
+};
+console.log("ex4")
+console.log(isValidJSON('{"name":"Bang","age":22}'));
+console.log(isValidJSON('{name:"Bang",age:"22"}'));
+console.log(isValidJSON(null));
+    </script>
+</body>
+</html>
