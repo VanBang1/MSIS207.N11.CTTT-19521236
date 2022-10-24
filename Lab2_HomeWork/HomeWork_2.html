@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-------------------DRUM--------------------------------->
+<title>19521236_HW2</title>
+<link rel="stylesheet" href="HomeWork_2.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0">
+	<meta name="description" content="Piano Keyboard developed with HTML, CSS and Javascript">
+	<meta name="keywords" content="piano, css, html, javascript, front-end">
+	<title>Piano Keyboard</title>
+	<link rel="shortcut icon" href="assets/img/ico/favicon2.ico" />
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+	<h1>The Drum Kit</h1>
+
+	<div class="all">
+
+		<button class="a1 button">1</button>
+		<button class="a2 button">2</button>
+		<button class="a3 button">3</button>
+		<button class="a4 button">4</button>
+		<button class="a5 button">5</button>
+		<button class="a6 button">6</button>
+		<button class="a7 button">7</button>
+	</div>
+    <script src="HomeWork_2_drum.js"></script> 
+</body>
+
+<!-----------------------PIANO-------------------------------->
+<body>
+	<h1>The Piano Kit</h1>
+	<ul class="piano">
+	  <li class="key">
+		<span class="white-key" data-key="20" data-note="1C"></span>
+		<span class="black-key" data-key="81" data-note="1Cs"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="65" data-note="1D"></span>
+		<span class="black-key" data-key="87" data-note="1Ds"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="83" data-note="1E"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="68" data-note="1F"></span>
+		<span class="black-key" data-key="82" data-note="1Fs"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="70" data-note="1G"></span>
+		<span class="black-key" data-key="84" data-note="1Gs"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="71" data-note="2A"></span>
+		<span class="black-key" data-key="89" data-note="2As"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="72" data-note="2B"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="74" data-note="2C"></span>
+		<span class="black-key" data-key="73" data-note="2Cs"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="75" data-note="2D"></span>
+		<span class="black-key" data-key="79" data-note="2Ds"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="76" data-note="2E"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="186" data-note="2F"></span>
+		<span class="black-key" data-key="219" data-note="2Fs"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="222" data-note="2G"></span>
+		<span class="black-key" data-key="221" data-note="2Gs"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="220" data-note="3A"></span>
+		<span class="black-key" data-key="13" data-note="3As"></span>
+	  </li>
+	  <li class="key">
+		<span class="white-key" data-key="37" data-note="3B"></span>
+	  </li>
+	  <br>
+
+	</ul>
+	<!-- End Piano -->
+	<!-- Site -->
+	<div class="wrap">
+	  <!-- Container -->
+	  <div class="container">
+		<hr>
+	  </div>
+	  <!-- End Container -->
+	</div>
+	<!-- End Site -->
+	<!-- Scripts -->
+	<script type="text/javascript" src="assets/js/scripts.min.js"></script>
+  </body>
+  <!----------------------Triangle-------------------------->
+<body>
+	<h1>The Triangle Kit</h1>
+	<img src="picture_intrusment/3149xNxPw3L._AC_SY580_.jpg" alt="Trulli" width="500" height="333">
+	<audio id="myAudio">
+	  <source src="sound_intrusment/Triangle Sound Effect.mp3">
+	</audio>
+	
+	<button onclick="playAudio()" type="button"><b>PLAY</b></button>
+	<p><button onclick="pauseAudio()" type="button"><b>STOP</b></button> </p>
+	
+	<script>
+	var x = document.getElementById("myAudio"); 
+	
+	function playAudio() { 
+	  x.play(); 
+	} 
+	
+	function pauseAudio() { 
+	  x.pause(); 
+	} 
+	</script>
+	
+	</body>
+<!------------------------Giutar------------------------------>
+<div align=center> 
+	<h1>The Guitar Kit</h1>
+  <div id="lutemain1" align="center">
+		  <div id="lutelines" align="center">
+			
+			  <div id="vline1" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute01.mp3')" style="height:700px;"></div>
+			
+			  <div id="vline2" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute02.mp3')" style="height:700px;"></div>
+			
+			  <div id="vline3" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute03.mp3')" style="height:700px;"></div>
+			
+			  <div id="vline4" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute04.mp3')" style="height:700px;"></div>
+			
+			  <div id="vline5" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute05.mp3')" style="height:700px;"></div>
+		  </div>
+		  <div id="lutecircle" align="center"></div>
+	  </div>
+  </div>
+  <script>
+	function play(mp3_file) {
+    var audio = new Audio(mp3_file);
+    audio.play();
+}
+  </script>
+
+</html>
